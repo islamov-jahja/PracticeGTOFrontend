@@ -1,0 +1,29 @@
+@import "../../Settings";
+
+.radio-form {
+  display: flex;
+  cursor: pointer;
+  margin-top: 10px;
+
+  &__button {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 1px lightgrey;
+    background: white;
+    margin-right: 5px;
+
+    &.checked {
+      border-color: $mainColor;
+      box-shadow: 0 0 0 1px $mainColor;
+      transition: border 200ms ease-in-out;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+}

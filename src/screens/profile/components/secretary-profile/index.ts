@@ -1,0 +1,1 @@
+export {SecretaryProfile} from "./SecretaryProfile"

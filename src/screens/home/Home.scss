@@ -1,0 +1,125 @@
+@import "../../Settings";
+
+.home {
+  min-height: calc(100vh - 130px);
+  background-image: url("./img/bg.png");
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 130px;
+
+  .cards {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .card {
+    flex: none;
+    width: 23%;
+    position: relative;
+    max-width: 300px;
+    height: 450px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 1% 20px;
+
+    @media (max-width: 1200px) {
+      margin: 0 3% 20px;
+      width: 28%;
+      max-width: none;
+    }
+
+    @media (max-width: 900px) {
+      width: 250px;
+    }
+
+    @media (max-width: 575px) {
+      width: 48%;
+      height: 300px;
+      margin: 0 1%;
+    }
+
+    &__link {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    &__content {
+      width: 100%;
+      height: 100%;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__img {
+      height: 225px;
+      margin: 0 auto;
+      width: 100%;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &.participant {
+        background-image: url("./img/part.svg");
+      }
+      
+      &.organizer {
+        background-image: url("./img/org.svg");
+      }
+
+      &.team {
+        background-image: url("./img/team.svg");
+      }
+
+      &.judge {
+        background-image: url("./img/info.svg");
+      }
+      
+      @media (max-width: 575px) {
+        height: 100%;
+        margin: 0 auto;
+        width: 100%;
+        background-size: 70% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &__title {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 32px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    &.participant, &.judge {
+      background-color: white;
+      color: $mainColor;
+    }
+
+    &.organizer {
+      background-color: red;
+    }
+
+    &.team {
+      background-color: $mainColor;
+    }
+  }
+}

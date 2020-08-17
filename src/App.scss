@@ -1,0 +1,22 @@
+@import "Settings";
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #666666;
+  font-family: sans-serif;
+}
+
+.button {
+  display: inline-block;
+  background: $mainColor;
+  padding: 10px 25px;
+  box-shadow: 0 0 0 1px $mainColor;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

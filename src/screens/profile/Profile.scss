@@ -1,0 +1,32 @@
+.profile {
+  .react-select-container {
+    width: 500px;
+  }
+
+  .profile-info-item {
+    margin-top: 20px;
+  }
+
+  .react-select__control--is-focused {
+    box-shadow: none;
+    border-color: #bb2b2e;
+
+    &:hover {
+      border-color: #bb2b2e;
+    }
+  }
+
+  .react-select__option {
+    background-color: white;
+    text-transform: capitalize;
+    &:hover {
+      background-color: rgba(182,72,59, 0.4);
+    }
+    &--is-focused {
+      background-color: rgba(182,72,59, 0.4);
+    }
+    &--is-selected {
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  $main-color: #f9fafc;
+  $text-color: #8394a6;
+
+  &__header {
+    display: flex;
+    background-color: $main-color;
+    height: 50px;
+    justify-content: space-between;
+  }
+
+  &__sub-header {
+    height: 50px;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: medium;
+  }
+
+  &__body {
+    display: flex;
+  }
+
+  &__line {
+    display: flex;
+    border-bottom: 1px solid $main-color;
+    min-height: 50px;
+    align-items: center;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex: 1;
+    color: $text-color;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+  }
+}

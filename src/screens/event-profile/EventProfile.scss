@@ -1,0 +1,77 @@
+.event-profile {
+  .edit-link {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .input__field.-name {
+    margin-top: 30px;
+  }
+
+  .form {
+    .label {
+      input.form__button {
+        background: rgba(1, 14, 138, .75);
+        border: none;
+        color: #fff;
+        padding: 10px 25px;
+        cursor: pointer;
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .event-status {
+    text-transform: capitalize;
+  }
+}
+
+.button-container {
+  display: flex;
+
+  &.-fixed {
+    position: fixed;
+    bottom: 60px;
+    right: 120px;
+    padding: 20px;
+    z-index: 99;
+  }
+  .button {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.button {
+  margin-top: 10px;
+}
+.button.-small {
+  font-size: 14px;
+  padding: 5px 15px;
+  margin-left: 20px;
+}
+.event-name {
+  position: relative;
+  display: inline-block;
+  padding-right: 30px;
+
+  &.-editable {
+    &:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      background-image: url("./img/icons-edit.svg");
+      background-size: contain;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

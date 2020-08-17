@@ -1,0 +1,99 @@
+@import "../../Settings";
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: $mainColor;
+  height: 95px;
+  width: 100%;
+
+  &__container {
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 10px;
+  }
+
+  &__login {
+    background-image: url("./img/login.svg");
+    margin-right: 20px;
+  }
+
+  &__menu {
+    background-image: url("./img/menu.svg");
+  }
+
+  &__profile {
+    background-image: url("./img/profile.svg");
+  }
+
+  &__controls {
+    position: relative;
+    display: inline;
+  }
+
+  &__logout {
+    background-image: url("./img/logout.png");
+    margin-left: 10px;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+
+    &-link {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &-text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 33px;
+      color: white;
+
+      @media (max-width: 600px) {
+        font-size: 24px;
+      }
+
+      @media (max-width: 400px) {
+        display: none;
+      }
+    }
+
+    &-icon {
+      width: 80px;
+      height: 53px;
+      background: url("./img/logo.svg") no-repeat;
+      margin-right: 30px;
+
+      @media (max-width: 400px) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+  }
+}

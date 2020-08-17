@@ -1,0 +1,15 @@
+.input__field {
+  height: 30px;
+  border: 1px solid #bfc4cf;
+  border-radius: 6px;
+  padding: 0 10px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.read-only {
+    cursor: default;
+    background: lightgrey;
+  }
+}
